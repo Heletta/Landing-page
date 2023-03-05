@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attack On Titan ⚔</title>
+  <style>
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      background: linear-gradient(90deg,
+          rgb(117, 117, 199),
+          rgb(139, 74, 74));
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      border: 1px solid #f2f2f2;
+      padding: 15px 20px;
+      margin: 40px 200px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .container {
+      color: orange;
+    }
+
+    p {
+      text-align: center;
+      color: black;
+      line-height: 25px;
+    }
+
+    a {
+      display: block;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 20px;
+      color: #f96d00;
+      background: transparent;
+      font-size: 14px;
+      border: 1px solid #f2f2f2;
+      border-radius: 15px;
+      box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.4);
+      transition: all 200ms ease-in-out;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: white;
+      background: #f96d00;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      padding: 0px auto;
+      border-radius: 10px;
+    }
+
+    .anime {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>I love Anime</h1>
+    <h2>Especially Attack On Titan</h2>
+    <hr />
+    <img
+      src="https://resizing.flixster.com/Lh0JlGGqDY7XM2VTBGKJI8uJmdk=/fit-in/1152x864/v2/https://flxt.tmsimg.com/assets/p10701949_b_h9_ah.jpg"
+      alt="Attack On Titan" width="600" />
+    <hr />
+    <p>
+      <strong>Anime</strong> (Japanese: アニメ, IPA: [aɲime]) is hand-drawn
+      and computer-generated animation originating from Japan. Outside of
+      Japan and in English, anime refers specifically to animation produced in
+      Japan. However, in Japan and in Japanese, anime (a term derived from a
+      shortening of the English word animation) describes all animated works,
+      regardless of style or origin. Animation produced outside of Japan with
+      similar style to Japanese animation is commonly referred to as
+      anime-influenced animation. <em>Attack on Titan</em> is very interesting
+      to watch.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Anime" target="_blank" class="learn-more">
+      Learn more on Wikipedia
+    </a>
+    <br />
+    <button class="watch-anime">
+      Watch <span class="anime">Attack On Titan 👌🏽</span>
+    </button>
+    <p class="footer">
+      This page was built by
+      <a href="https://www.shecodes.io/graduates/67305-heletta-amaakai" target="_blank">
+        Heletta Amaakai
+      </a>
+    </p>
+  </div>
+  <script>
+    function watch() {
+      let answer = prompt("Do you already watch anime?");
+      if (answer === "I do") {
+        alert("That's sad");
+      } else {
+        alert("❤️‍🔥");
+      }
+      let name = prompt("What is your name?");
+      alert(
+        "Thank you " +
+        name +
+        ", we'll be in touch. " +
+        "We hope you come to love anime 🥰 ",
+      );
+    }
+    let watchButton = document.querySelector("button");
+
+    watchButton.addEventListener("click", watch);
+  </script>
+</body>
+
+</html>
